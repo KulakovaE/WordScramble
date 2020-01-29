@@ -23,6 +23,7 @@ class ViewController: UITableViewController {
     
     func configureNavigationItem() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(startGame))
     }
     
     func readingFromDiskContent() {
@@ -37,7 +38,7 @@ class ViewController: UITableViewController {
         }
     }
     
-    func startGame() {
+    @objc func startGame() {
         title = allWords.randomElement()
         usedWords.removeAll(keepingCapacity: true)
         tableView.reloadData()
@@ -80,7 +81,7 @@ class ViewController: UITableViewController {
                     
                     return
                 } else {
-                    showErrorMessage(errorTitle: "Word not recognised or is the same word", errorMessage: "You can't just make them up, you know. Be aware the word has 4 letters minimum")
+                    showErrorMessage(errorTitle: "Word not recognised or is the same word", errorMessage: "You can't just make them up, you know. Be aware the word has 3 letters minimum")
                 }
             } else {
                 showErrorMessage(errorTitle: "Word used already", errorMessage: "Be more original")
@@ -112,9 +113,10 @@ class ViewController: UITableViewController {
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
         
-        if word.count <= 3 || word == word {
+        if word.count <= 2 {
             return false
         }
+        
         return misspelledRange.location == NSNotFound
     }
     
