@@ -13,6 +13,7 @@
 		F368051D23E19F320054361A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F368051B23E19F320054361A /* Main.storyboard */; };
 		F368051F23E19F350054361A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F368051E23E19F350054361A /* Assets.xcassets */; };
 		F368052223E19F350054361A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F368052023E19F350054361A /* LaunchScreen.storyboard */; };
+		F368052A23E1A0710054361A /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F368052923E1A0710054361A /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F368051E23E19F350054361A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F368052123E19F350054361A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F368052323E19F350054361A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F368052923E1A0710054361A /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F368051B23E19F320054361A /* Main.storyboard */,
 				F368051E23E19F350054361A /* Assets.xcassets */,
 				F368052023E19F350054361A /* LaunchScreen.storyboard */,
+				F368052923E1A0710054361A /* start.txt */,
 				F368052323E19F350054361A /* Info.plist */,
 			);
 			path = WordScramble;
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F368052223E19F350054361A /* LaunchScreen.storyboard in Resources */,
+				F368052A23E1A0710054361A /* start.txt in Resources */,
 				F368051F23E19F350054361A /* Assets.xcassets in Resources */,
 				F368051D23E19F320054361A /* Main.storyboard in Resources */,
 			);
